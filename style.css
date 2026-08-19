@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ecf0f1;
+  margin-bottom: 10px;
+}
+
+#status {
+  color: #ecf0f1;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  min-height: 28px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: repeat(8, 80px);
+  border: 4px solid #1a252f;
+  margin: 0 auto 15px;
+  width: max-content;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.square.light {
+  background: #f0d9b5;
+}
+
+.square.dark {
+  background: #b58863;
+}
+
+.square.selected {
+  outline: 4px solid #3498db;
+  outline-offset: -4px;
+}
+
+.square.possible {
+  box-shadow: inset 0 0 0 5px rgba(46, 204, 113, 0.7);
+}
+
+.square.capture {
+  box-shadow: inset 0 0 0 5px rgba(231, 76, 60, 0.9);
+}
+
+.square.last-move {
+  background: #f7e58a !important;
+}
+
+.square.check {
+  background: #e74c3c !important;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
