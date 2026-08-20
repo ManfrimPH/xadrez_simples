@@ -58,7 +58,7 @@ Custo estimado simulado com a tabela de preços do DeepSeek V3 (US$ 0,27/M input
 
 <!-- PREENCHER: URL do deploy (Vercel/GitHub Pages) -->
 
-Repositório: https://github.com/ManfrimPH/xadrez_simples
+Repositório: https://xadrez-simples.onrender.com
 
 ## 8. Integrantes
 
