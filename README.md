@@ -14,19 +14,15 @@ faça um jogo de xadrez criado ua pasta com nome xadrez_simples
 
 Ferramenta: OpenCode (CLI) com modelo `deepseek-v4-flash-free`.
 
-## 3. Técnica aplicada: Chain-of-Thought + Task Decomposition
+## 3. Técnica aplicada: Nenhuma (prompt Simples)
 
-A tarefa foi decomposta pelo modelo em subtarefas executadas em sequência: criar a estrutura da pasta com os 3 arquivos (`index.html`, `style.css`, `script.js`), implementar o tabuleiro e as peças, implementar a lógica de movimentação e alternância de turnos, e validar o resultado ao final. Cada chamada da sessão corresponde a uma etapa do raciocínio passo a passo (chain-of-thought).
+Comando simples e curto pedindo aquilo que eu queria.
 
-**Por que essa técnica:** a decomposição da tarefa em etapas permite validar cada parte do jogo isoladamente antes de partir para a próxima, e o raciocínio em cadeia garante que o código final seja consistente entre as etapas (tabuleiro → peças → regras → turnos).
-
-**Evidências:**
+**Por que essa técnica:** Professor nos pediu para ser dessa forma curta.
 
 <!-- EVIDÊNCIA: print da sessão mostrando o prompt de entrada e as etapas de execução (criação da pasta/arquivos, implementação e validação). -->
 
 ## 4. Teste de curadoria de contexto (arquivo inteiro vs. trecho)
-
-> Teste validado manualmente. Preencher com as duas versões do prompt e a comparação de tokens.
 
 <!-- EVIDÊNCIA: print da chamada A (arquivo inteiro) com contagem de tokens. -->
 <!-- EVIDÊNCIA: print da chamada B (trecho) com contagem de tokens. -->
